@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.header__button {
+  width: 115px;
+  height: 38px;
+  background-color: #5222D0;
+  color: #FFFFFF;
+  font-family: 'Intro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.main {
+  background-image: url("/Viarushka/assets/images/pic.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 800px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main {
+    height: 700px;
+  }
+}
+
+.main__button {
+  width: 270px;
+  height: 84px;
+  font-family: 'Intro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #5222D0;
+  border: 1px solid #000000;
+  border-radius: 100px;
+}
+
+.header {
+}
+.root__section {
+}
+.header__button {
+}
+.main {
+
+}
+.main__section {
+  margin-left: 50px;
+}
+.main__hd {
+  color: black;
+  font-family: Intro ;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 72px */
+  width: 542px;
+}
+.main__par {
+  color: black;
+  font-family: Roboto Slab;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%; /* 32px */
+}
+.main__button {
+}
+.nav {
+}
+.nav__list {
+}
+.nav__item {
+  display: inline-block;
+  margin-left: 4em;
+}
+.nav__link {
+  color: #5222D0;
+  font-family: Roboto Slab;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%; /* 32px */
+  text-decoration: none;
+}
