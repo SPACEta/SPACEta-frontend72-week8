@@ -1,4 +1,11 @@
-.header {
+@font-face {
+  src: url(../fonts/IntroDemo-BlackCAPS.otf) format("truetype"); 
+  font-family: "Intro Demo Black CAPS";
+  font-weight: 900;
+  font-style: normal;
+}
+
+header {
   display: flex;
   justify-content: space-between;
   padding-top: 2em;
@@ -6,14 +13,14 @@
   padding-right: 4em;
 }
 
-.header__button {
+.block-1__button {
   width: 115px;
   height: 38px;
   background-color: #5222D0;
   color: #FFFFFF;
-  font-family: 'Intro', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 13px;
   line-height: 13px;
   letter-spacing: 0.5px;
@@ -22,31 +29,40 @@
   cursor: pointer;
 }
 
-.main {
-  background-image: url("/Viarushka/assets/images/pic.png");
+.block-2 {
+  margin-left: 50px;
+  background-image:url("../images/pic.png");
   background-repeat: no-repeat;
   background-position: top right;
-  height: 800px;
+  height: 35em;
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px) {
-  .main {
-    height: 500px;
-  }
+.block-2__hd {
+  color: black;
+  font-family: 'Intro Demo Black CAPS', serif;
+  font-size: 1.8em;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .main {
-    height: 700px;
-  }
-}
-
-.main__button {
-  width: 270px;
-  height: 84px;
-  font-family: 'Intro', sans-serif;
+.block-2__par {
+  font-family: 'Roboto Slab', serif;
+  color: black;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
   font-style: normal;
-  font-weight: 400;
+}
+
+.block-2__button {
+  width: 270px;
+  height: 70px;
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 35px;
   line-height: 35px;
   color: #FFFFFF;
@@ -56,51 +72,61 @@
   border-radius: 100px;
 }
 
-.header {
-}
-.root__section {
-}
-.header__button {
-}
-.main {
-
-}
-.main__section {
-  margin-left: 50px;
-}
-.main__hd {
-  color: black;
-  font-family: Intro ;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 72px */
-  width: 542px;
-}
-.main__par {
-  color: black;
-  font-family: Roboto Slab;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 160%; /* 32px */
-}
-.main__button {
-}
-.nav {
-}
-.nav__list {
-}
 .nav__item {
   display: inline-block;
   margin-left: 4em;
 }
 .nav__link {
   color: #5222D0;
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  line-height: 160%; /* 32px */
+  line-height: 160%;
   text-decoration: none;
+}
+
+.posibilities {
+  margin-left: 50px;
+}
+
+.posibilities__hd{
+  color: black;
+  font-family: 'Intro Demo Black CAPS', serif;
+  font-size: 1.3em;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.posibilities__cards {
+  width: 80%;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.posibilities__card {
+  font-family: 'Roboto Slab', serif;
+  color: black;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: left;
+  font-style: normal;
+}
+
+.posibilities__card__title {
+  color: black;
+  font-family: 'Intro Demo Black CAPS', serif;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.posibilities__card__img {
+  margin-bottom: 20px;
 }
